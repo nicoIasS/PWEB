@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atividade POO</title>
+</head>
+
+
+<style>
+  .atvs
+  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px;
+  }
+</style>
+<body class="atvs">
+<div>
+
+  <h1>Retângulo</h1>
+
+  <p>Base:
+    <input type="number" id="base">
+  </p>
+  <br>
+
+  <p>Altura:
+    <input type="number" id="altura">
+  </p>
+  <br>
+
+  <button onclick="calcularArea()">Calcular Área</button>
+
+  <p id="resultadoArea">
+  </p>
+</div>
+
+
+<div>
+  <h1>Conta Bancária</h1>
+
+  <h2>Conta Corrente</h2>
+
+  <p>Nome:
+    <input type="text" id="nomeCorrente">
+  </p>
+  <br>
+
+  <p>Correntista:
+    <input type="text" id="correntista">
+  </p>
+  <p>Banco:
+    <input type="text" id="bancoCorrente">
+  </p>
+  <br>
+
+  <p>Número da Conta:
+    <input type="text" id="numeroContaCorrente">
+  </p>
+  <br>
+
+  <p>Saldo:
+    <input type="number" id="saldoCorrente">
+  </p>
+  <br>
+
+  <p>Saldo Especial:
+    <input type="number" id="especialCorrente">
+  </p>
+  <br>
+
+  <button onclick="mostrarCorrente()">Mostrar Conta Corrente</button>
+
+  <p id="resultadoCorrente">
+  </p>
+
+</div>
+
+<div>
+
+  <h2>Poupança</h2>
+  
+  <p>Nome:
+    <input type="text" id="nomePoupanca">
+  </p>
+  <br>
+  
+  <p>Correntista:
+    <input type="text" id="correntista">
+  </p>
+  
+  <p>Banco:
+    <input type="text" id="bancoPoupanca">
+  </p>
+  <br>
+  
+  <p>Número da Conta:
+    <input type="text" id="numeroContaPoupanca">
+  </p>
+  <br>
+  
+  <p>Saldo:
+    <input type="number" id="saldoPoupanca">
+  </p>
+  <br>
+  
+  <p>Juros:
+    <input type="number" id="jurosPoupanca">
+  </p>
+  <br>
+  
+<p>Data de Vencimento:
+  <input type="date" id="dataVencPoupanca">
+</p>
+<br>
+
+<button onclick="mostrarPoupanca()">Mostrar Poupança</button>
+
+<p id="resultadoPoupanca">
+  <script src="script.js"></script>
+</p>
+</div>
+
+</body>
+</html>
